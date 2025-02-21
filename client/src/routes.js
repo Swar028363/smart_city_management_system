@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes as R, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -16,20 +16,20 @@ import Healthcare from "./pages/Healthcare";
 
 const Routes = () => {
     return (
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/traffic" component={Traffic} />
-            <Route path="/public-transport" component={PublicTransport} />
-            <Route path="/energy" component={Energy} />
-            <Route path="/water" component={Water} />
-            <Route path="/waste" component={Waste} />
-            <Route path="/security" component={Security} />
-            <Route path="/healthcare" component={Healthcare} />
-        </Switch>
+        <R>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/traffic" element={<Traffic />} />
+            <Route path="/public-transport" element={<PublicTransport />} />
+            <Route path="/energy" element={<Energy />} />
+            <Route path="/water" element={<Water />} />
+            <Route path="/waste" element={<Waste />} />
+            <Route path="/security" element={<Security />} />
+            <Route path="/healthcare" element={<Healthcare />} />
+        </R>
     );
 };
 
