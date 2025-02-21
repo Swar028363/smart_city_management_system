@@ -1,0 +1,26 @@
+{
+    "name": "smart_city_management_system",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "client": "npm start --prefix client",
+        "server": "nodemon server/server.js",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Swar028363/smart_city_management_system.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Swar028363/smart_city_management_system/issues"
+    },
+    "homepage": "https://github.com/Swar028363/smart_city_management_system#readme",
+    "description": "",
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
