@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
     return (
@@ -61,12 +62,12 @@ function Register() {
                     <span className="text-gray-600 text-sm">
                         Already have an account?
                     </span>
-                    <a
-                        href="/login"
+                    <Link
+                        to="/login"
                         className="text-blue-600 text-sm ml-1 hover:underline"
                     >
                         Login
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
