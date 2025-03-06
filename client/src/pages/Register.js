@@ -1,10 +1,30 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isMobile;
+}
+
 function Register() {
+    const isMobile = useIsMobile();
+
+    // Use a different container class on mobile vs. desktop
+    const containerClass = isMobile
+      ? "w-auto max-w-sm bg-white p-4 rounded-lg shadow-lg"
+      : "w-full max-w-md bg-white p-8 rounded-lg shadow-lg";
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
-            <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+            <div className={containerClass}>
                 <h2 className="text-2xl font-bold text-center mb-6">
                     Register
                 </h2>
