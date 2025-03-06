@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -20,7 +20,25 @@ ChartJS.register(
   Legend
 );
 
+// Custom hook to detect mobile view (viewport width < 768px)
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isMobile;
+}
+
 function Healthcare() {
+  const isMobile = useIsMobile();
+
   // Sample data for Hospital Bed Occupancy Rate chart
   const [occupancyChartData] = useState({
     labels: ["Central Hospital", "City Clinic", "Westside Medical", "East End Hospital"],
@@ -114,16 +132,20 @@ function Healthcare() {
         {/* Hospital Bed Occupancy Chart */}
         <div className="bg-white shadow rounded-lg p-4">
           <h4 className="text-xl font-semibold mb-2">Hospital Bed Occupancy Rate</h4>
-          <Bar
-            data={occupancyChartData}
-            options={{
-              responsive: true,
-              plugins: {
-                legend: { position: "top" },
-                title: { display: true, text: "Bed Occupancy Rate by Hospital (%)" },
-              },
-            }}
-          />
+          {/* On mobile: fixed height container; on desktop: default container */}
+          <div className={isMobile ? "relative h-64" : ""}>
+            <Bar
+              data={occupancyChartData}
+              options={{
+                responsive: true,
+                maintainAspectRatio: isMobile ? false : true,
+                plugins: {
+                  legend: { position: "top" },
+                  title: { display: true, text: "Bed Occupancy Rate by Hospital (%)" },
+                },
+              }}
+            />
+          </div>
           <p className="text-gray-700 mt-4">
             This chart illustrates the bed occupancy rate across major hospitals in the city. Monitoring occupancy rates is crucial for managing patient loads, planning capacity expansions, and ensuring optimal resource allocation during peak periods.
           </p>
@@ -132,16 +154,20 @@ function Healthcare() {
         {/* Average Patient Wait Times Chart */}
         <div className="bg-white shadow rounded-lg p-4">
           <h4 className="text-xl font-semibold mb-2">Average Patient Wait Times</h4>
-          <Bar
-            data={waitTimeChartData}
-            options={{
-              responsive: true,
-              plugins: {
-                legend: { position: "top" },
-                title: { display: true, text: "Average Wait Times by Department (minutes)" },
-              },
-            }}
-          />
+          {/* On mobile: fixed height container; on desktop: default container */}
+          <div className={isMobile ? "relative h-64" : ""}>
+            <Bar
+              data={waitTimeChartData}
+              options={{
+                responsive: true,
+                maintainAspectRatio: isMobile ? false : true,
+                plugins: {
+                  legend: { position: "top" },
+                  title: { display: true, text: "Average Wait Times by Department (minutes)" },
+                },
+              }}
+            />
+          </div>
           <p className="text-gray-700 mt-4">
             This chart displays the average wait times across various healthcare departments. By analyzing wait times, healthcare administrators can identify bottlenecks, streamline processes, and enhance overall patient satisfaction.
           </p>
