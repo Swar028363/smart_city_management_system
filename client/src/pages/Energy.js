@@ -99,7 +99,7 @@ function Energy() {
             <section className="space-y-6">
                 <h3 className="text-2xl font-semibold">Solar Power Plants</h3>
                 <img
-                    src="https://via.placeholder.com/300x200?text=Placeholder+Image"
+                    src="https://cdn.narendramodi.in/wp-content/uploads/2012/04/solar-ph-inner2.jpg"
                     alt="Solar Power Plant"
                     className="w-full max-w-md rounded shadow"
                 />
@@ -123,7 +123,7 @@ function Energy() {
             <section className="space-y-6">
                 <h3 className="text-2xl font-semibold">Wind Energy Farms</h3>
                 <img
-                    src="https://via.placeholder.com/300x200?text=Placeholder+Image"
+                    src="https://www.evwind.es/wp-content/uploads/2013/05/gamesa-in-india-wind-farm.jpg"
                     alt="Wind Energy Farm"
                     className="w-full max-w-md rounded shadow"
                 />
@@ -145,7 +145,7 @@ function Energy() {
                     Hydroelectric Power Stations
                 </h3>
                 <img
-                    src="https://via.placeholder.com/300x200?text=Placeholder+Image"
+                    src="https://thumbs.dreamstime.com/b/sant-sarovar-dam-famous-one-day-picnic-spot-located-gujarat-state-capital-city-gandhinagar-sant-sarovar-dam-gandhinagar-202696352.jpg"
                     alt="Hydroelectric Power Station"
                     className="w-full max-w-md rounded shadow"
                 />
@@ -169,7 +169,7 @@ function Energy() {
                     Fossil Fuel Power Plants
                 </h3>
                 <img
-                    src="https://via.placeholder.com/300x200?text=Placeholder+Image"
+                    src="https://powerphilippines.com/wp-content/uploads/2016/07/fossil-fuels-to-remain-a-part-of-ph-energy-mix.jpg"
                     alt="Fossil Fuel Power Plant"
                     className="w-full max-w-md rounded shadow"
                 />
@@ -191,7 +191,7 @@ function Energy() {
             <section className="space-y-6">
                 <h3 className="text-2xl font-semibold">Nuclear Power Plants</h3>
                 <img
-                    src="https://via.placeholder.com/300x200?text=Placeholder+Image"
+                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202407/nuclear-energy-251357649-16x9.jpg?VersionId=yoy4DCfVGuV7uQtY4PzKCDtiHR52gNHn"
                     alt="Nuclear Power Plant"
                     className="w-full max-w-md rounded shadow"
                 />

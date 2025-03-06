@@ -70,11 +70,6 @@ function Healthcare() {
       {/* Overview Section */}
       <section className="space-y-6">
         <h3 className="text-2xl font-semibold">Overview of City Healthcare</h3>
-        <img
-          src="https://via.placeholder.com/300x200?text=Healthcare+Overview"
-          alt="Healthcare Overview"
-          className="w-full max-w-md rounded shadow"
-        />
         <p className="text-gray-700">
           The city’s healthcare infrastructure comprises a network of hospitals, clinics, and specialized care centers. Our system is built on a foundation of advanced technology and data analytics to streamline patient care and resource management.
         </p>
@@ -87,7 +82,7 @@ function Healthcare() {
       <section className="space-y-6">
         <h3 className="text-2xl font-semibold">Hospitals & Clinics</h3>
         <img
-          src="https://via.placeholder.com/300x200?text=Hospital+Image"
+          src="https://content3.jdmagicbox.com/comp/gandhinagar-gujarat/c1/9999p2764.2764.100914143403.s7c1/catalogue/civil-hospital-gandhinagar-sector-12-gandhinagar-gujarat-public-hospitals-5j8x09q315.jpg"
           alt="Hospital"
           className="w-full max-w-md rounded shadow"
         />
@@ -103,7 +98,7 @@ function Healthcare() {
       <section className="space-y-6">
         <h3 className="text-2xl font-semibold">Emergency Services</h3>
         <img
-          src="https://via.placeholder.com/300x200?text=Emergency+Services"
+          src="https://content3.jdmagicbox.com/comp/gandhinagar-gujarat/u7/9999pxx79.xx79.210910154058.q8u7/catalogue/divine-icu-on-wheel-sargasan-gandhinagar-gujarat-ambulance-services-35qys24zla.jpg"
           alt="Emergency Services"
           className="w-full max-w-md rounded shadow"
         />

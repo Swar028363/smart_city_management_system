@@ -31,28 +31,21 @@ function PublicTransport() {
                     routes, stop timings, and any delays or cancellations,
                     ensuring you never miss your ride.
                 </p>
-                <img
-                    src="https://via.placeholder.com/600x300?text=Bus+Routes+Map"
-                    alt="Bus Routes Map"
-                    className="w-full rounded shadow"
-                />
             </section>
 
             {/* Metro & Tram Services Section */}
             <section className="space-y-4">
-                <h3 className="text-2xl font-semibold">
-                    Metro & Tram Services
-                </h3>
+                <h3 className="text-2xl font-semibold">Metro Services</h3>
                 <p className="text-gray-700">
-                    Discover our efficient metro and tram services that connect
-                    key areas of the city. Check live updates, estimated arrival
-                    times, and station details to make your commute as smooth as
+                    Discover our efficient metro services that connect key areas
+                    of the city. Check live updates, estimated arrival times,
+                    and station details to make your commute as smooth as
                     possible.
                 </p>
                 <img
-                    src="https://via.placeholder.com/600x300?text=Metro+Tram+Map"
+                    src="https://themetrorailguy.com/wp-content/uploads/2020/07/AhmedabadMetroPhase2MapN.png"
                     alt="Metro and Tram Map"
-                    className="w-full rounded shadow"
+                    className="h-100 w-auto rounded shadow"
                 />
             </section>
 
