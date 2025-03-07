@@ -33,7 +33,7 @@ function Header() {
                 </button>
 
                 {/* Branding */}
-                <h1 className="text-neutral-950 text-xl font-bold">
+                <h1 className="text-neutral-950 p-2 text-xl font-bold">
                     Smart City Management System
                 </h1>
 
