@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/smart_city_management_system/static/css/main.2e24c558.css",
-    "main.js": "/smart_city_management_system/static/js/main.d1482f05.js",
+    "main.js": "/smart_city_management_system/static/js/main.d07ee650.js",
     "index.html": "/smart_city_management_system/index.html",
     "main.2e24c558.css.map": "/smart_city_management_system/static/css/main.2e24c558.css.map",
-    "main.d1482f05.js.map": "/smart_city_management_system/static/js/main.d1482f05.js.map"
+    "main.d07ee650.js.map": "/smart_city_management_system/static/js/main.d07ee650.js.map"
   },
   "entrypoints": [
     "static/css/main.2e24c558.css",
-    "static/js/main.d1482f05.js"
+    "static/js/main.d07ee650.js"
   ]
 }
