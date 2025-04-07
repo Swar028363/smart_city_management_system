@@ -12,6 +12,7 @@ import Energy from "./pages/Energy";
 import Water from "./pages/Water";
 import Waste from "./pages/Waste";
 import Security from "./pages/Security";
+import SecurityForm from "./pages/SecurityForm";
 import Healthcare from "./pages/Healthcare";
 
 const Routes = () => {
@@ -28,6 +29,7 @@ const Routes = () => {
             <Route path="/water" element={<Water />} />
             <Route path="/waste" element={<Waste />} />
             <Route path="/security" element={<Security />} />
+            <Route path="/securityform" element={<SecurityForm />} />
             <Route path="/healthcare" element={<Healthcare />} />
         </R>
     );
